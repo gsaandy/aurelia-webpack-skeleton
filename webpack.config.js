@@ -4,7 +4,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ENV = process.env.NODE_ENV && process.env.NODE_ENV.toLowerCase() || 'dev';
 
 const SRC_ROOT_DIR = path.resolve('src/main');
-const TS_ROOT_DIR = SRC_ROOT_DIR + '/app';
 const TARGET_DIR = path.resolve('target');
 const ROOT_DIR = path.resolve();
 const BASE_URL = "/";
