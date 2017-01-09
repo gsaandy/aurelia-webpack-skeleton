@@ -1,2 +1,2 @@
 #!/bin/bash
-npm run dev:server
+yarn run dev:server

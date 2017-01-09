@@ -1,2 +1,2 @@
 #!/bin/bash
-npm run clean:build:prod
+yarn run clean:build:prod

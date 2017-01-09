@@ -1,3 +1,3 @@
 #!/bin/bash
-npm run clean:build:dev
+yarn run clean:build:dev
 

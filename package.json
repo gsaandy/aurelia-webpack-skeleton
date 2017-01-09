@@ -4,13 +4,13 @@
   "description": "Webpack quick start for Aurelia",
   "main": "target/app.js",
   "scripts": {
-    "clean:build:dev": "npm run clean && npm run _build:dev",
-    "clean:build:prod": "npm run clean && npm run _build:prod",
+    "clean:build:dev": "yarn run clean && yarn run _build:dev",
+    "clean:build:prod": "yarn run clean && yarn run _build:prod",
     "dev:server": "./node_modules/.bin/cross-env NODE_ENV=dev node ./node_modules/webpack-dev-server/bin/webpack-dev-server --inline --progress --profile --watch --open",
     "clean": "./node_modules/.bin/rimraf target",
-    "_build:dev": "./node_modules/.bin/cross-env NODE_ENV=dev npm run _webpack --progress --profile",
-    "_build:prod": "./node_modules/.bin/cross-env NODE_ENV=production npm run _webpack -- --progress --profile && npm run _archive:dist",
-    "_archive:dist": "npm run _bestzip target/aurelia-webpack-skeleton.zip target/*",
+    "_build:dev": "./node_modules/.bin/cross-env NODE_ENV=dev yarn run _webpack --progress --profile",
+    "_build:prod": "./node_modules/.bin/cross-env NODE_ENV=production yarn run _webpack -- --progress --profile && yarn run _archive:dist",
+    "_archive:dist": "yarn run _bestzip target/aurelia-webpack-skeleton.zip target/*",
     "_webpack": "./node_modules/.bin/cross-env ./node_modules/.bin/webpack",
     "_webpack-dev-server": "./node_modules/.bin/cross-env ./node_modules/.bin/webpack-dev-server",
     "_bestzip": "./node_modules/.bin/cross-env ./node_modules/.bin/bestzip"
